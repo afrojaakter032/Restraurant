@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -8,11 +9,10 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
-.header{
+.header {
     position: relative;
     height: 100px;
 }
-
 
 .navbar-wrap {
     display: flex;
@@ -23,9 +23,11 @@ html {
     top: 40px;
     gap: 30px;
 }
+
 /* search button starts here */
 
-.search-icon, .cart-icon {
+.search-icon,
+.cart-icon {
     padding: 15px;
     border-radius: 50%;
     width: 60px;
@@ -37,7 +39,8 @@ html {
     cursor: pointer;
 }
 
-.search-icon:hover, .cart-icon:hover {
+.search-icon:hover,
+.cart-icon:hover {
     background-color: orangered;
 }
 
@@ -45,7 +48,7 @@ html {
     display: flex;
     /* justify-content: space-between; */
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     background-color: white;
     /* padding: 10px; */
     box-shadow: 0px 0px 10px black;
@@ -54,87 +57,57 @@ html {
     width: 60%;
 }
 
-
-
-.navbar-left ul {
+.navbar-menu ul {
     display: flex;
+    height: 100%;
     /* padding: 10px; */
-
-
 }
 
-.navbar-left ul li{
+.navbar-menu ul li {
     list-style: none;
     position: relative;
     white-space: nowrap;
-
+    display: flex;
+    align-items: center;
 }
 
-.navbar-left ul li a {
+.navbar-menu ul li a {
     text-decoration: none;
     padding: 10px;
 }
 
-.navbar-left ul li a i {
+.navbar-menu ul li a i {
     font-size: small;
 }
 
-.navbar-left ul li a:hover {
+.navbar-menu ul li a:hover {
     color: orange;
 }
 
-.navbar-left ul li:hover .sub-menu {
+.navbar-menu ul li:hover .sub-menu {
     display: flex !important;
-
-
-
-
 }
 
 .sub-menu {
     display: none !important;
     flex-direction: column;
     position: absolute;
-    top: 70px;
+    top: 104px;
     width: min-content;
     background-color: aliceblue;
     border-radius: 3px;
     padding: 10px 20px;
     gap: 10px;
     width: 150px;
-    border-top: 4px solid  coral;
-
+    border-top: 4px solid coral;
 }
+
 .sub-menu li a {
     padding: 0px !important;
-
 }
 
 .navbar-center {
     padding: 0px 15px;
-}
-
-.navbar-right ul {
-    display: flex;
-    /* padding: 10px; */
-}
-
-.navbar-right ul li {
-    list-style: none;
-
-}
-.navbar-right ul li a i {
-    font-size: small;
-}
-.navbar-right ul li a {
-    text-decoration: none;
-    padding: 10px;
-    list-style: none;
-
-}
-
-.navbar-right ul li a:hover {
-  color: orange;
 }
 
 .navbar-center img {
@@ -144,10 +117,7 @@ html {
 
 /* corporate section starts here */
 .corporate {
-
-padding: 100px;
-
-
+    padding: 100px;
 }
 
 .corporate-content {
@@ -160,40 +130,41 @@ padding: 100px;
     color: orangered;
     padding: 10px;
 }
+
 .corporate-content h1 {
     font-size: 32px;
     padding: 10px;
 }
+
 /* corporate section ends here */
 
 /* card starts here */
-
 .card {
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;
     width: 300px;
-  }
+}
 
-  .card-image {
+.card-image {
     width: 100%;
     height: auto;
-  }
+}
 
-  .card-content {
+.card-content {
     padding: 20px;
-  }
+}
 
-  .card-title {
+.card-title {
     font-size: 18px;
     margin-bottom: 10px;
-  }
+}
 
-  .card-description {
+.card-description {
     margin-bottom: 10px;
-  }
+}
 
-  .card-button {
+.card-button {
     background-color: #4CAF50;
     border: none;
     color: white;
@@ -203,9 +174,5 @@ padding: 100px;
     display: inline-block;
     font-size: 16px;
     border-radius: 5px;
-  }
-
-
+}
 /* card ends here */
-
-

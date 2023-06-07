@@ -44,6 +44,33 @@ html {
     background-color: orangered;
 }
 
+
+.notification {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+  }
+
+  .badge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+  }
+
+
 .navbar {
     display: flex;
     /* justify-content: space-between; */
@@ -54,7 +81,7 @@ html {
     box-shadow: 0px 0px 10px black;
     border-radius: 70px;
     margin: 10px;
-    width: 60%;
+    width: 65%;
 }
 
 .navbar-menu ul {
@@ -139,6 +166,10 @@ html {
 /* corporate section ends here */
 
 /* card starts here */
+.card-section{
+    display: flex;
+    gap: 10px;
+}
 .card {
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -165,7 +196,7 @@ html {
 }
 
 .card-button {
-    background-color: #4CAF50;
+    background-color: orangered;
     border: none;
     color: white;
     padding: 10px 15px;
@@ -173,6 +204,6 @@ html {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 /* card ends here */

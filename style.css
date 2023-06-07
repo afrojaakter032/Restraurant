@@ -44,27 +44,22 @@ html {
     background-color: orangered;
 }
 
-
-.notification {
+.card-btn{
     position: relative;
-    width: 40px;
-    height: 40px;
-    background-color: red;
-    border-radius: 50%;
-  }
+}
+
 
   .badge {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    right: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 20px;
     height: 20px;
-    background-color: white;
-    color: red;
+    background-color: orangered;
+    color: white;
     font-size: 12px;
     font-weight: bold;
     border-radius: 50%;
@@ -159,7 +154,7 @@ html {
 }
 
 .corporate-content h1 {
-    font-size: 32px;
+    font-size: 40px;
     padding: 10px;
 }
 
@@ -168,13 +163,15 @@ html {
 /* card starts here */
 .card-section{
     display: flex;
+    justify-content: center;
     gap: 10px;
+    padding: 0px 100px;
 }
 .card {
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;
-    width: 300px;
+    flex-grow: 1;
 }
 
 .card-image {

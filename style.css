@@ -24,7 +24,7 @@ html {
     gap: 30px;
 }
 
-/* search button starts here */
+/* search and cart button starts here */
 
 .search-icon,
 .cart-icon {
@@ -64,6 +64,9 @@ html {
     font-weight: bold;
     border-radius: 50%;
   }
+  /* search and cart button ends here */
+
+  /* navbar starts here */
 
 
 .navbar {
@@ -110,6 +113,8 @@ html {
     display: flex !important;
 }
 
+/* navbar ends here */
+/* sub menu starts here */
 .sub-menu {
     display: none !important;
     flex-direction: column;
@@ -136,6 +141,8 @@ html {
     height: 100px;
     width: 100px;
 }
+
+/* sub menu ends here */
 
 /* corporate section starts here */
 .corporate {
@@ -168,15 +175,28 @@ html {
     padding: 0px 100px;
 }
 .card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid white;
+    border-radius: 2px;
     overflow: hidden;
     flex-grow: 1;
+    cursor: pointer;
+    margin: 20px ;
 }
 
 .card-image {
     width: 100%;
     height: auto;
+    transition: 1s;
+
+}
+.card:hover {
+    border: 1px solid orangered;
+
+
+}
+
+.card:hover .card-image{
+    transform: scale(1.2);
 }
 
 .card-content {
@@ -204,3 +224,36 @@ html {
     border-radius: 20px;
 }
 /* card ends here */
+
+/* Reservation section starts here */
+.reservation-section {
+    position: relative;
+}
+
+.Reservation-content {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    text-align: center;
+
+}
+.Reservation-content span i {
+    font-family: 'Pacifico';
+    font-size: 28px;
+    color: orangered;
+    padding: 10px;
+}
+
+.Reservation-content  h1 {
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+}
+
+.Reservation-content  p{
+    color: white;
+    font-size: 18px;
+}
+
+
+/* Reservation section ends here */

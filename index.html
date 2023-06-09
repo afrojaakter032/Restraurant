@@ -101,7 +101,11 @@
             <section class="card-section">
 
                 <div class="card">
-                    <img src="./images/service-img.jpg" alt="Image" class="card-image">
+                    <div class="card-border"></div>
+                    <div class="cardimage-wrap">
+
+                        <img src="./images/service-img.jpg" alt="Image" class="card-image">
+                    </div>
                     <div class="card-content">
                         <h2 class="card-title">Buffet Services</h2>
                         <p class="card-description">Continualy utilize team building niche markets before visionary
@@ -112,7 +116,11 @@
                 </div>
 
                 <div class="card">
-                    <img src="./images/wedding.jpg" alt="Image" class="card-image">
+                    <div class="card-border"></div>
+
+                    <div class="cardimage-wrap">
+                        <img src="./images/wedding.jpg" alt="Image" class="card-image">
+                    </div>
                     <div class="card-content">
                         <h2 class="card-title">Wedding Service</h2>
                         <p class="card-description">Continualy utilize team building niche markets before visionary
@@ -123,12 +131,15 @@
                 </div>
 
                 <div class="card">
-                    <img src="./images/party img.jpg" alt="Image" class="card-image">
+
+                    <div class="card-border"></div>
+                    <div class="cardimage-wrap">
+                        <img src="./images/party img.jpg" alt="Image" class="card-image">
+                    </div>
                     <div class="card-content">
                         <h2 class="card-title">Party Services</h2>
                         <p class="card-description">Continualy utilize team building niche markets before visionary
-                            catalouge for
-                            change.</p>
+                            catalouge for change.</p>
                         <a href="#" class="card-button">learn More</a>
                     </div>
                 </div>
@@ -136,13 +147,48 @@
             <!-- Card section ends here -->
             <!-- Reservation section starts here -->
             <section class="reservation-section">
-                <img src="./images/bg3.jpg" alt="BG image" width="100%">
-                <div class="Reservation-content">
-                    <span><i>corporate Application</i></span>
-                    <h1>Make Reservation</h1>
-                    <p>Assertivly mycroodinate robust e-trailers for extinsible human capital dropioratly benchmark network
-                    </p>
-                    <img src="./images/decor.png" alt="image" style="background-color:  white;">
+
+                <div class="container">
+                    <div class="reservation-content">
+                        <span><i>corporate Application</i></span>
+                        <h1>Make Reservation</h1>
+                        <p>Assertivly mycroodinate robust e-trailers for extinsible human capital dropioratly benchmark network
+                        </p>
+                        <img src="./images/decor.png" alt="image">
+
+                    </div>
+                    <div class="form-group-wrap">
+                        <div class="form-group">
+                            <input type="text" placeholder="Select Date" class="form-control">
+                            <div class="input-group-icon">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" placeholder="Select Time" class="form-control">
+                            <div class="input-group-icon">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <input type="number" placeholder="Total Guest" class="form-control">
+                            <div class="input-group-icon">
+                                <i class="fa-regular fa-user"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+                       <div class="form-group">
+                         <textarea name="Speacial Message" id=""  rows="5" class="form-control" placeholder="speacial message"></textarea>
+                       </div>
+                    </div>
+                    <div class="submit-btn">
+                        <button class="submit">Book your seat</button>
+
+                    </div>
 
                 </div>
 

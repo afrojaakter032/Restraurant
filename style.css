@@ -528,51 +528,51 @@ margin-left: 150px;
 /* food menu button ends here */
 
 /* food menu cart section starts here */
-.food-menu-cart-wrap {
-    margin-bottom: 50px;
+.food-menu-cart-content-left, .food-menu-cart-content-right {
+    width: 50%;
 
 }
+.food-menu-cart-wrap {
+    margin-bottom: 50px;
+    display: flex;
+    gap: 20px;
+}
 
-.food-menu-cart-content-left {
+.food-cart-item {
     display: flex;
      gap: 20px;
      align-items: center;
+     margin-bottom: 20px;
+     justify-content: space-between;
 }
 .star-icon {
     color: orangered;
 }
 
-.food-menu-cart-content-right {
-    margin-left: 20px;
+.cart-item {
+   flex-grow: 1;
 }
+
 .cart-title {
     display: flex;
     gap: 5px;
     background-color: orangered;
+    color: white;
     padding: 4px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-
 }
 .cart-image {
     overflow: hidden;
 
 }
 .cart-img-item {
-
-    width: 100%;
-    height: auto;
     transition: 1s;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     border: 1px;
-    overflow: hidden;
-    z-index: 1;
-
-
 }
 
 .cart-image:hover .cart-img-item  {
     transform: scale(1.5);
-
 }
+
 /* food menu cart section ends here */

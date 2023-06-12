@@ -466,7 +466,7 @@ margin-left: 150px;
     gap: 20px;
     padding-bottom: 80px;
 }
-.achivement-header {
+.counter {
     text-align: center;
     color: white;
     font-size: 50px;
@@ -495,3 +495,84 @@ margin-left: 150px;
 }
 
 /* food menu section starts here */
+/* food menu button starts here */
+
+.food-menu-button-wrap {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    padding: 10px;
+    justify-content: center;
+
+}
+
+.food-menu-button {
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    margin-bottom: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.food-menu-button.active {
+    background-color: orangered;
+    color: white;
+}
+
+.food-menu-button:hover {
+    background-color: orangered;
+    color: white;
+}
+
+/* food menu button ends here */
+
+/* food menu cart section starts here */
+.food-menu-cart-wrap {
+    margin-bottom: 50px;
+
+}
+
+.food-menu-cart-content-left {
+    display: flex;
+     gap: 20px;
+     align-items: center;
+}
+.star-icon {
+    color: orangered;
+}
+
+.food-menu-cart-content-right {
+    margin-left: 20px;
+}
+.cart-title {
+    display: flex;
+    gap: 5px;
+    background-color: orangered;
+    padding: 4px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.cart-image {
+    overflow: hidden;
+
+}
+.cart-img-item {
+
+    width: 100%;
+    height: auto;
+    transition: 1s;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border: 1px;
+    overflow: hidden;
+    z-index: 1;
+
+
+}
+
+.cart-image:hover .cart-img-item  {
+    transform: scale(1.5);
+
+}
+/* food menu cart section ends here */

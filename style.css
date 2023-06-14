@@ -638,6 +638,40 @@ position: relative;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
+.gallery-image {
+    position: relative;
+
+
+}
+.gallery-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 40px;
+    /* background: rgba(0,0,0,0); */
+    height: 90%;
+    width: 90%;
+    opacity: 0;
+    /* top: 10px;
+    left: 10px; */
+
+
+}
+.gallery-overlay:hover  {
+ color: orangered;
+ background: rgba(0,0,0,0.7);
+ opacity: 1;
+
+
+
+}
+
 
 .gallery-wrap .gallery-image img {
     width: 100%;

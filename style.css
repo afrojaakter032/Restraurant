@@ -910,19 +910,21 @@ position: relative;
     font-size: 12px;
     padding: 15px;
 }
+
 .latest-news-wrap .card .card-button {
     bottom: -30px;
     padding: 20px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     background-color: black;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
 }
-.latest-news-wrap .card .card-border {
-    border: 1px solid #ccc;
-}
-.latest-news-wrap .card {
-    border: 1px solid #ccc;
-}
-.latest-news-wrap .card .card-button:hover  {
+
+.latest-news-wrap .card:hover .card-button  {
 
     background-color: orangered;
 }

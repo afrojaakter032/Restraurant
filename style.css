@@ -898,6 +898,7 @@ position: relative;
 }
 .latest-news-wrap .card {
     padding-bottom: 50px;
+    margin-bottom: 50px;
 
 }
 
@@ -908,6 +909,22 @@ position: relative;
 .card-content-item span {
     font-size: 12px;
     padding: 15px;
+}
+.latest-news-wrap .card .card-button {
+    bottom: -30px;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: black;
+}
+.latest-news-wrap .card .card-border {
+    border: 1px solid #ccc;
+}
+.latest-news-wrap .card {
+    border: 1px solid #ccc;
+}
+.latest-news-wrap .card .card-button:hover  {
+
+    background-color: orangered;
 }
 
 /* latest news section ends here */

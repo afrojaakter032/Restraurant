@@ -616,7 +616,7 @@ position: relative;
 /* food gallery starts here */
 .food-gallery-section {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 }
 .food-gallery-content span i {
     font-family: 'Pacifico';
@@ -651,22 +651,22 @@ position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    color: white;
     font-size: 40px;
-    /* background: rgba(0,0,0,0); */
     height: 90%;
-    width: 90%;
+    width: 0%;
     opacity: 0;
-    /* top: 10px;
-    left: 10px; */
+    color: orangered;
+    background: rgba(0,0,0,0.7);
+    transition: 0.5s;
+
+
 
 
 }
-.gallery-overlay:hover  {
- color: orangered;
- background: rgba(0,0,0,0.7);
+.gallery-image:hover  .gallery-overlay {
+
  opacity: 1;
+ width: 90%;
 
 
 
@@ -678,3 +678,236 @@ position: relative;
 }
 
 /* food gallery ends here */
+
+/* promotional banner starts here */
+
+
+.promotional-banner .container {
+    position: relative;
+}
+.promotional-banner .container::after {
+    content: '';
+    position: absolute;
+    background-image: url(./images/bg-shape-1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 280px;
+    width: 300px;
+    left: -50px;
+    bottom: -200px;
+    z-index: -1;
+}
+.banner-image {
+    text-align: center;
+}
+
+/* promotional banner ends here */
+/* testimonial section starts here */
+
+.testimonial-section {
+    text-align: center;
+    padding-top: 50px;
+
+
+
+}
+.testimonial-content span i {
+    font-family: 'Pacifico';
+    font-size: 28px;
+    color: orangered;
+    padding: 10px;
+}
+
+.testimonial-content  h1 {
+
+    padding: 10px;
+    font-size: 42px;
+}
+
+.testimonial-content  p{
+    font-size: 18px;
+}
+
+.testimonial-wrap {
+    background-image: url(./images/testimonial-bg-1-1.jpg);
+    background-size: 125% 125%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 900px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-circle {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid transparent;
+    box-shadow: 0px 0px 100px 0px rgba(35, 38, 46, 0.2);
+}
+.testimonial-circle:hover {
+    border: 2px solid orangered;
+}
+.testimonial-item  {
+   text-align: center;
+    margin-top: 50px;
+
+}
+.testimonial-img img {
+    height: 150px;
+    width: 150px;
+
+}
+.testimonial-text {
+    text-align: center;
+    padding: 10px;
+}
+.testimonial-text h1 {
+ padding: 10px;
+}
+.testimonial-text span {
+    color: orangered;
+
+}
+.testimonial-text p {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    /* color: black; */
+}
+
+/* testimonial section ends here */
+/* newsletter section starts here */
+.newsletter-section {
+    background-image: url(./images/footer-bg-2-1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    margin: 50px 0px;
+    background-attachment: fixed;
+
+}
+.newsletter-overlay {
+   background: rgba(0, 0, 0, 0.5);
+   padding: 100px 0px;
+
+}
+
+
+.newsletter-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.newsletter-text, span {
+    color: white;
+    font-size: 32px;
+}
+.newsletter-text p{
+    color: white;
+    font-size: 16px;
+    padding-top: 15px;
+
+}
+.newslater-input-field {
+    width: 50%;
+    position: relative;
+}
+.newslater-input-field .form-group .form-control {
+    background-color: white;
+    font-size: 14px;
+    padding: 20px;
+    padding-left: 50px;
+
+
+}
+
+.newslater-input-field .input-group-icon {
+    color: black;
+    position: absolute;
+    left: 20px;
+    top: 21px;
+
+}
+.subscribe-btn {
+    position: absolute;
+    right: 0;
+    border: none;
+    top: 2px;
+    border-radius: 30px;
+    background-color: orangered;
+    padding: 22px 40px;
+    color: white;
+    font-size: 14px;
+
+}
+
+.subscribe-btn:hover {
+    background-color: white;
+
+    border: 2px solid orangered;
+    color: orangered;
+    cursor: pointer;
+    border-right: none;
+
+}
+
+
+/* newsletter section ends here */
+
+/* latest news section starts here */
+.latest-news-section {
+    text-align: center;
+    padding-top: 50px;
+
+
+
+}
+.latest-news-content span i {
+    font-family: 'Pacifico';
+    font-size: 28px;
+    color: orangered;
+    padding: 10px;
+}
+
+.latest-news-content  h1 {
+
+    padding: 10px;
+    font-size: 42px;
+}
+
+.latest-news-content p{
+    font-size: 18px;
+}
+.latest-news-wrap  {
+    display: flex;
+    justify-content: space-between;
+
+}
+.latest-news-wrap .card .card-content p {
+    padding: 10px;
+    font-size: 32px;
+    font-family: 'Rufina', serif;
+    text-align: left;
+
+}
+.latest-news-wrap .card {
+    padding-bottom: 50px;
+
+}
+
+.card-content-item {
+    display: flex;
+    gap: 10px;
+}
+.card-content-item span {
+    font-size: 12px;
+    padding: 15px;
+}
+
+/* latest news section ends here */

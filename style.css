@@ -949,6 +949,7 @@ position: relative;
 
 }
 .footer-item {
+    width: calc(100%/3);
 
 }
 .footer-heading {
@@ -987,8 +988,10 @@ position: relative;
 
 }
 .footer-icon-item:hover {
+    border-color: orangered;
     background-color: orangered;
-    border: none;
+    cursor: pointer;
+
 }
 
 .food-menu-wrap {
@@ -997,22 +1000,30 @@ position: relative;
     gap: 50px;
     padding: 10px;
 }
+.ul-style-type {
+    list-style-type: symbols('>');
+}
 
 .food-menu-left, .food-menu-right, ul, li {
     color: white;
-    /* line-height: 25px; */
+    list-style-type: none;
 }
 
 .latest-posts-wrap {
+
+
+}
+.latest-posts-item {
     display: flex;
     gap: 20px;
-    padding: 20px;
 }
-.img:hover {
-    transform: scale(1.5);
+.latest-posts-img img {
+    height: 100px;
+    width: 100px;
+}
+.latest-posts-text span {
+ font-size: 14px;
 }
 
-.latest-posts-right span {
-    font-size: 12px;
-}
+
 /* footer section statrs here */

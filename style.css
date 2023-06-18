@@ -1000,6 +1000,19 @@ position: relative;
 
 .food-menu-left, .food-menu-right, ul, li {
     color: white;
-    line-height: 25px;
+    /* line-height: 25px; */
+}
+
+.latest-posts-wrap {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.img:hover {
+    transform: scale(1.5);
+}
+
+.latest-posts-right span {
+    font-size: 12px;
 }
 /* footer section statrs here */

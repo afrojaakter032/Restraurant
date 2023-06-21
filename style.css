@@ -359,7 +359,7 @@ html {
 
 .service-content {
     display: flex;
-    gap 10px;
+    gap: 10px;
     justify-content: space-between;
     margin-bottom: 30px;
 
@@ -373,7 +373,7 @@ html {
 .left-bottom-img {
     position: absolute;
     bottom: 0;
-    right: -80px;
+    left: 280px;
     border-left: 10px solid white;
     border-top: 10px solid white; ;
 }
@@ -419,8 +419,19 @@ margin-left: 150px;
     font-size: 80px;
     color: orangered;
 }
+/* service section reseponsive starts here */
+@media only screen and (max-width: 1000px)  {
+    .service-content {
+        display: block;
+
+    }
+
+}
+
+/* service section reseponsive starts here */
 
 /* service section ends here */
+
 /* achivement section starts here */
 
 .achivement-section {
@@ -937,7 +948,8 @@ position: relative;
     background-repeat: no-repeat;
 
     width: 100%;
-    margin: 50px 0px;
+    padding-top: 80px;
+
     /* background-attachment: fixed; */
 
 }
@@ -958,9 +970,24 @@ position: relative;
     color: white;
 
 }
-.dottet-hr {
-
+.footer-item .dottet-hr {
+    width: 50px;
+    height: 3px;
+    background-color: orangered;
+    margin-left: 30px;
+    position: relative;
 }
+
+.footer-item .dottet-hr::before {
+  content: '';
+  top: 0;
+  left: -30px;
+  width: 15px;
+  height: 3px;
+  background-color: orangered;
+  position: absolute;
+}
+
 .footer-item p {
     color: #ccc;
     padding: 10px 0px;
@@ -1019,6 +1046,14 @@ position: relative;
     white-space: nowrap;
 
 }
+.food-menu-left ul li a span:hover {
+    color: orangered;
+}
+
+.food-menu-right ul li a span:hover {
+    color: orangered;
+
+}
 
 
 .food-menu-left span,
@@ -1031,9 +1066,14 @@ position: relative;
     color: #ccc;
 }
 
-.latest-posts-wrap {
-
-
+.latest-posts-text a:hover {
+    color: orangered;
+}
+.latest-posts-text a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
 }
 .latest-posts-item {
     display: flex;
@@ -1050,8 +1090,9 @@ position: relative;
     transition: 1s;
 
 }
-.latest-posts-img img:hover {
+.latest-posts-item:hover img  {
     transform: scale(1.5);
+    color: orangered;
 
 }
 
@@ -1064,3 +1105,47 @@ position: relative;
 
 
 /* footer section statrs here */
+
+/* footer bottom section starts here */
+
+.footer-bottom-section {
+    background-color: black;
+    padding: 20px;
+
+
+}
+
+.footer-bottom-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer-bottom-content p {
+    color: white;
+    cursor: pointer;
+}
+.footer-bottom-content a {
+    text-decoration: none;
+    color: white;
+}
+.footer-bottom-content a:hover {
+    color: orangered;
+}
+
+.footer-bottom-menu ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+.footer-bottom-menu ul li a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+
+}
+.footer-bottom-menu ul li a:hover {
+    color: orangered;
+}
+
+/* footer bottom section starts here */

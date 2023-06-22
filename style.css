@@ -247,6 +247,19 @@ html {
     border-radius: 20px;
     position: absolute;
 }
+
+/* card section responsive starts here */
+
+@media only screen and (max-width: 1000px)  {
+    .card-section{
+        display: block;
+
+
+    }
+
+}
+
+/* card section responsive ends here */
 /* card ends here */
 
 /* Reservation section starts here */
@@ -351,6 +364,25 @@ html {
     border: 1px solid orange;
     color: orange;
   }
+  /* reservation section responsive starts here */
+  @media only screen and (max-width: 1000px) {
+    .form-group-wrap {
+        display: block;
+
+
+    }
+
+    .reservation-section {
+
+        height: 800px;
+
+    }
+
+
+  }
+
+
+  /* reservation section responsive ends here */
 
 
 /* Reservation section ends here */
@@ -425,6 +457,13 @@ margin-left: 150px;
         display: block;
 
     }
+    .service-item-wrap {
+        margin-top: 60px;
+        margin-left: 0px;
+
+    }
+
+
 
 }
 

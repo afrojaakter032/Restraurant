@@ -12,6 +12,11 @@ html {
 .container {
     padding: 0px 50px;
 }
+@media only screen and (max-width: 1000px) {
+    .container {
+        padding: 0px 10px;
+    }
+}
 
 
 .header {
@@ -174,10 +179,14 @@ html {
 
 /* card starts here */
 .card-section{
+
+}
+.card-section-wrap {
     display: flex;
     justify-content: center;
     gap: 10px;
-    padding: 0px 100px;
+
+
 }
 .card {
     border: 1px solid #ccc;
@@ -201,7 +210,7 @@ html {
 }
 .cardimage-wrap {
     overflow: hidden;
-    height: 250px;
+    height: auto;
 }
 
 .card-image {
@@ -251,8 +260,8 @@ html {
 /* card section responsive starts here */
 
 @media only screen and (max-width: 1000px)  {
-    .card-section{
-        display: block;
+    .card-section-wrap {
+        flex-direction: column;
 
 
     }
@@ -409,6 +418,7 @@ html {
     border-left: 10px solid white;
     border-top: 10px solid white; ;
 }
+
 .img-border {
     position: absolute;
     top: 10px;
@@ -462,9 +472,19 @@ margin-left: 150px;
         margin-left: 0px;
 
     }
+     .service-content-left img {
+        width: 100%;
+     }
 
 
 
+
+}
+@media only screen and (max-width: 620px) {
+    .left-bottom-img  {
+        display: none;
+
+    }
 }
 
 /* service section reseponsive starts here */
@@ -574,6 +594,17 @@ margin-left: 150px;
     background-color: orangered;
     color: white;
 }
+/* food menu responsive  starts here */
+@media only screen and (max-width: 1000px) {
+    .food-menu-button-wrap {
+        flex-wrap: wrap;
+
+    }
+
+}
+
+
+/* food menu responsive  starts here */
 
 /* food menu button ends here */
 
@@ -583,7 +614,7 @@ margin-left: 150px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     /* background-attachment: fixed; */
-    height: 750px;
+
     width: 100%;
     margin: 50px 0px;
 }
@@ -660,6 +691,23 @@ position: relative;
 .cart-image:hover .cart-img-item  {
     transform: scale(1.5);
 }
+/* food menu resposive starts here  */
+@media only screen and (max-width: 1000px) {
+    .food-menu-cart-content-left, .food-menu-cart-content-right {
+        width: 100%;
+
+    }
+    .food-menu-cart-wrap {
+        flex-direction: column;
+
+    }
+}
+
+
+
+/* food menu responsive starts here */
+
+
 
 /* food menu cart section ends here */
 
@@ -726,6 +774,16 @@ position: relative;
 .gallery-wrap .gallery-image img {
     width: 100%;
 }
+/* food gallery resposive starts here */
+@media only screen and (max-width: 1000px) {
+    .gallery-wrap {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}
+
+/* food gallery resposive ends here */
 
 /* food gallery ends here */
 

@@ -1036,6 +1036,15 @@ position: relative;
 
     background-color: orangered;
 }
+ /* latest news resposive starts here */
+ @media only screen and (max-width: 1000px) {
+    .latest-news-wrap  {
+        flex-direction: column;
+
+    }
+ }
+
+ /* latest news resposive starts here */
 
 /* latest news section ends here */
 /* footer section statrs here */
@@ -1200,8 +1209,24 @@ position: relative;
  font-size: 14px;
 }
 
+/* footer section responsive starts here */
+@media only screen and (max-width: 1000px) {
+    .footer-wrap {
+        flex-direction: column;
 
-/* footer section statrs here */
+    }
+    /* .food-menu-wrap {
+        flex-direction: column;
+
+
+    } */
+}
+
+
+/* footer section responsive ends here */
+
+
+/* footer section ends here */
 
 /* footer bottom section starts here */
 

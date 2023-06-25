@@ -122,6 +122,10 @@ html {
 .navbar-menu ul li:hover .sub-menu {
     display: flex !important;
 }
+/* navbar responsive starts here */
+@media only screen and (max-width: 1000px)
+
+/* navbar responsive ends here */
 
 /* navbar ends here */
 /* sub menu starts here */
@@ -1269,5 +1273,14 @@ position: relative;
 .footer-bottom-menu ul li a:hover {
     color: orangered;
 }
+/* footer bottom resposive starts here */
+@media only screen and (max-width: 1000px) {
+    .footer-bottom-wrap {
+        flex-direction: column;
 
+
+    }
+}
+
+/* footer bottom resposive ends here */
 /* footer bottom section starts here */

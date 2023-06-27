@@ -123,7 +123,24 @@ html {
     display: flex !important;
 }
 /* navbar responsive starts here */
-@media only screen and (max-width: 1000px)
+@media only screen and (max-width: 1000px) {
+    .navbar {
+        display: none;
+
+    }
+    .navbar-wrap {
+        top: 20px;
+
+    }
+
+
+}
+
+@media only screen and (min-width: 1000px) {
+    .menubar-icon {
+        display: none;
+    }
+}
 
 /* navbar responsive ends here */
 
@@ -159,9 +176,6 @@ html {
 /* sub menu ends here */
 
 /* corporate section starts here */
-.corporate {
-    padding: 100px;
-}
 
 .corporate-content {
     text-align: center;
@@ -535,7 +549,7 @@ margin-left: 150px;
 
 .achivement-sector {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     justify-content: center;
     gap: 20px;
     padding-bottom: 80px;
@@ -548,6 +562,13 @@ margin-left: 150px;
 .achivement h2 {
     color: #ccc;
     font-size: 24px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .achivement-sector {
+        flex-direction: column;
+
+    }
 }
 
 /* achivement section ends here */
@@ -968,9 +989,22 @@ position: relative;
     border-right: none;
 
 }
+/* mewslater section responsive starts here */
+
+/* mewslater section responsive ends here */
 
 
 /* newsletter section ends here */
+
+@media only screen and (max-width: 1000px) {
+
+.newsletter-content {
+    flex-direction: column;
+    gap: 20px 0px;
+
+
+}
+}
 
 /* latest news section starts here */
 .latest-news-section {
@@ -1219,11 +1253,11 @@ position: relative;
         flex-direction: column;
 
     }
-    /* .food-menu-wrap {
-        flex-direction: column;
+    .footer-item {
+        width: 100%;
 
+    }
 
-    } */
 }
 
 

@@ -1,3 +1,8 @@
+:root {
+    --primary: #fa8507;
+}
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -36,30 +41,25 @@ html {
 
 /* search and cart button starts here */
 
-.search-icon,
-.cart-icon {
+.btn-circle {
+    position: relative;
     padding: 15px;
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    color: orange;
+    color: var(--primary);
     font-size: 20px;
     box-shadow: 0px 0px 10px black;
     border: none;
     cursor: pointer;
 }
 
-.search-icon:hover,
-.cart-icon:hover {
-    background-color: orangered;
+.btn-circle:hover {
+    background-color: var(--primary);
+    color: white;
 }
 
-.card-btn{
-    position: relative;
-}
-
-
-  .badge {
+.btn-circle .badge {
     position: absolute;
     top: 0;
     right: 0px;
@@ -68,12 +68,12 @@ html {
     align-items: center;
     width: 20px;
     height: 20px;
-    background-color: orangered;
+    background-color: var(--primary);
     color: white;
     font-size: 12px;
     font-weight: bold;
     border-radius: 50%;
-  }
+}
   /* search and cart button ends here */
 
   /* navbar starts here */
@@ -116,7 +116,7 @@ html {
 }
 
 .navbar-menu ul li a:hover {
-    color: orange;
+    color: var(--primary);
 }
 
 .navbar-menu ul li:hover .sub-menu {
@@ -125,8 +125,29 @@ html {
 /* navbar responsive starts here */
 @media only screen and (max-width: 1000px) {
     .navbar {
-        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 9999;
+        border-radius: 0;
+        width: 300px;
+        margin: 0px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 50px;
+        font-size: 14px;
 
+
+    }
+    .navbar-menu ul {
+        flex-direction: column;
+
+
+    }
+    .navbar-center img {
+        display: none;
     }
     .navbar-wrap {
         top: 20px;
@@ -184,7 +205,7 @@ html {
 .corporate-content span i {
     font-family: 'Pacifico';
     font-size: 18px;
-    color: orangered;
+    color: var(--primary);
     padding: 10px;
 }
 
@@ -238,11 +259,11 @@ html {
 
 }
 .card:hover {
-    border: 1px solid orangered;
+    border: 1px solid var(--primary);
 }
 
 .card:hover .card-border {
-    border: 1px solid orangered;
+    border: 1px solid var(--primary);
 }
 
 .card:hover .card-image{
@@ -263,7 +284,7 @@ html {
 }
 
 .card-button {
-    background-color: orangered;
+    background-color: var(--primary);
     border: none;
     color: white;
     padding: 10px 15px;
@@ -309,7 +330,7 @@ html {
 .reservation-content span i {
     font-family: 'Pacifico';
     font-size: 28px;
-    color: orangered;
+    color: var(--primary);
     padding: 10px;
 }
 
@@ -377,7 +398,7 @@ html {
   }
   .submit {
     padding: 10px;
-    background-color: orange;
+    background-color: var(--primary);
     color: white;
     height: 80px;
     width: 250px;
@@ -388,8 +409,8 @@ html {
   }
   .submit:hover {
     background-color: white;
-    border: 1px solid orange;
-    color: orange;
+    border: 1px solid var(--primary);
+    color: var(--primary);
   }
   /* reservation section responsive starts here */
   @media only screen and (max-width: 1000px) {
@@ -455,7 +476,7 @@ html {
 .service-content-right span i {
     font-family: 'Pacifico';
     font-size: 18px;
-    color: orangered;
+    color: var(--primary);
     /* padding-bottom: px; */
 
 }
@@ -477,7 +498,7 @@ margin-left: 150px;
 
 .service-icon i {
     font-size: 80px;
-    color: orangered;
+    color: var(--primary);
 }
 /* service section reseponsive starts here */
 @media only screen and (max-width: 1000px)  {
@@ -580,7 +601,7 @@ margin-left: 150px;
 .food-menu-content span i {
     font-family: 'Pacifico';
     font-size: 18px;
-    color: orangered;
+    color: var(--primary);
     padding: 10
 
 }
@@ -611,12 +632,12 @@ margin-left: 150px;
     cursor: pointer;
 }
 .food-menu-button.active {
-    background-color: orangered;
+    background-color: var(--primary);
     color: white;
 }
 
 .food-menu-button:hover {
-    background-color: orangered;
+    background-color: var(--primary);
     color: white;
 }
 /* food menu responsive  starts here */
@@ -681,7 +702,7 @@ position: relative;
      justify-content: space-between;
 }
 .star-icon {
-    color: orangered;
+    color: var(--primary);
 }
 
 .cart-item {
@@ -691,7 +712,7 @@ position: relative;
 .cart-title {
     display: flex;
     gap: 4px;
-    background-color: orangered;
+    background-color: var(--primary);
     color: white;
     padding: 4px;
     border-top-left-radius: 10px;
@@ -744,7 +765,7 @@ position: relative;
 .food-gallery-content span i {
     font-family: 'Pacifico';
     font-size: 18px;
-    color: orangered;
+    color: var(--primary);
     padding: 10
 
 }
@@ -778,7 +799,7 @@ position: relative;
     height: 90%;
     width: 0%;
     opacity: 0;
-    color: orangered;
+    color: var(--primary);
     background: rgba(0,0,0,0.7);
     transition: 0.5s;
 
@@ -847,7 +868,7 @@ position: relative;
 .testimonial-content span i {
     font-family: 'Pacifico';
     font-size: 28px;
-    color: orangered;
+    color: var(--primary);
     padding: 10px;
 }
 
@@ -882,7 +903,7 @@ position: relative;
     box-shadow: 0px 0px 100px 0px rgba(35, 38, 46, 0.2);
 }
 .testimonial-circle:hover {
-    border: 2px solid orangered;
+    border: 2px solid var(--primary);
 }
 .testimonial-item  {
    text-align: center;
@@ -902,7 +923,7 @@ position: relative;
  padding: 10px;
 }
 .testimonial-text span {
-    color: orangered;
+    color: var(--primary);
 
 }
 .testimonial-text p {
@@ -973,7 +994,7 @@ position: relative;
     border: none;
     top: 2px;
     border-radius: 30px;
-    background-color: orangered;
+    background-color: var(--primary);
     padding: 22px 40px;
     color: white;
     font-size: 14px;
@@ -983,28 +1004,33 @@ position: relative;
 .subscribe-btn:hover {
     background-color: white;
 
-    border: 2px solid orangered;
-    color: orangered;
+    border: 2px solid var(--primary);
+    color: var(--primary);
     cursor: pointer;
     border-right: none;
 
 }
 /* mewslater section responsive starts here */
 
+@media only screen and (max-width: 1000px) {
+
+    .newsletter-content {
+        flex-direction: column;
+        gap: 20px 0px;
+
+
+    }
+    .newslater-input-field {
+        width: 80%;
+
+    }
+    }
+
 /* mewslater section responsive ends here */
 
 
 /* newsletter section ends here */
 
-@media only screen and (max-width: 1000px) {
-
-.newsletter-content {
-    flex-direction: column;
-    gap: 20px 0px;
-
-
-}
-}
 
 /* latest news section starts here */
 .latest-news-section {
@@ -1017,7 +1043,7 @@ position: relative;
 .latest-news-content span i {
     font-family: 'Pacifico';
     font-size: 28px;
-    color: orangered;
+    color: var(--primary);
     padding: 10px;
 }
 
@@ -1072,7 +1098,7 @@ position: relative;
 
 .latest-news-wrap .card:hover .card-button  {
 
-    background-color: orangered;
+    background-color: var(--primary);
 }
  /* latest news resposive starts here */
  @media only screen and (max-width: 1000px) {
@@ -1117,7 +1143,7 @@ position: relative;
 .footer-item .dottet-hr {
     width: 50px;
     height: 3px;
-    background-color: orangered;
+    background-color: var(--primary);
     margin-left: 30px;
     position: relative;
 }
@@ -1128,7 +1154,7 @@ position: relative;
   left: -30px;
   width: 15px;
   height: 3px;
-  background-color: orangered;
+  background-color: var(--primary);
   position: absolute;
 }
 
@@ -1159,8 +1185,8 @@ position: relative;
 
 }
 .footer-icon-item:hover {
-    border-color: orangered;
-    background-color: orangered;
+    border-color: var(--primary);
+    background-color: var(--primary);
     cursor: pointer;
 
 }
@@ -1191,11 +1217,11 @@ position: relative;
 
 }
 .food-menu-left ul li a span:hover {
-    color: orangered;
+    color: var(--primary);
 }
 
 .food-menu-right ul li a span:hover {
-    color: orangered;
+    color: var(--primary);
 
 }
 
@@ -1211,7 +1237,7 @@ position: relative;
 }
 
 .latest-posts-text a:hover {
-    color: orangered;
+    color: var(--primary);
 }
 .latest-posts-text a {
     display: block;
@@ -1236,7 +1262,7 @@ position: relative;
 }
 .latest-posts-item:hover img  {
     transform: scale(1.5);
-    color: orangered;
+    color: var(--primary);
 
 }
 
@@ -1290,7 +1316,7 @@ position: relative;
     color: white;
 }
 .footer-bottom-content a:hover {
-    color: orangered;
+    color: var(--primary);
 }
 
 .footer-bottom-menu ul {
@@ -1305,7 +1331,7 @@ position: relative;
 
 }
 .footer-bottom-menu ul li a:hover {
-    color: orangered;
+    color: var(--primary);
 }
 /* footer bottom resposive starts here */
 @media only screen and (max-width: 1000px) {

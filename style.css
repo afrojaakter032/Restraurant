@@ -121,6 +121,9 @@ html {
 .breadcrumb ul li a {
     text-decoration: none;
 }
+.breadcrumb ul li a:hover {
+    color: orangered;
+}
 
   /* search and cart button ends here */
 

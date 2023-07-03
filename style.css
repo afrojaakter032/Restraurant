@@ -17,6 +17,31 @@ html {
 .container {
     padding: 0px 50px;
 }
+.row {
+    display: flex;
+    gap: 20px;
+}
+.col {
+    width: 100%;
+}
+.h1 {
+    font-size: 30px;
+}
+.mt-4 {
+    margin-top: 15px;
+}
+.d-flex {
+    display: flex;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.border-bottom {
+    border-bottom: 1px solid #ccc;
+}
+.border-deshed {
+    border-style: dashed;
+}
 @media only screen and (max-width: 1000px) {
     .container {
         padding: 0px 10px;
@@ -1404,3 +1429,40 @@ position: relative;
 
 /* footer bottom resposive ends here */
 /* footer bottom section starts here */
+
+/* contact us css starts here */
+.contact-form-card {
+    background-color: #ccc;
+    padding: 30px;
+}
+.contact-form-card .contact-form-heading {
+    font-size: 35px;
+    padding: 5px;
+
+}
+
+.contact-form-card .contact-form-sub-heading {
+    font-size: 14px;
+    padding: 5px;
+    color: #fa8507;
+    margin-bottom: 10px;
+}
+
+.contact-form-card .form-group .form-control {
+    background-color: white;
+
+    border-radius: 0px;
+    border: none;
+
+}
+.contact-form-card .submit-btn .submit {
+    border-radius: 0px;
+
+}
+.submit-btn {
+    text-align: left;
+
+}
+
+
+/* contact us css ends here */

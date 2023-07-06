@@ -241,8 +241,13 @@ position: relative;
 
 
     }
+
     .navbar-center img {
-        display: none;
+        display: flex;
+        position: absolute;
+        top: 20px;
+        left: 30%;
+        padding: 10px;
     }
     .navbar-wrap {
         top: 20px;

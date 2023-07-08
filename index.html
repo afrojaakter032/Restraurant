@@ -19,7 +19,19 @@
 
     <body>
         <!-- loader starts here -->
-        <div class="pre-loader"></div>
+        <div class="pre-loader">
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/YouTube_loading_symbol_3_%28transparent%29.gif" alt="Loader" />
+        </div>
+        <!-- go to btn top btn starts here -->
+        <div class="go-to-top-btn">
+            <button class="btn-circle">
+                <i class="fa-solid fa-angle-up"></i>
+            </button>
+        </div>
+
+        <!-- go to btn top btn ends here -->
+
 
         <!-- loader ends here -->
         <header class="header">
@@ -934,5 +946,11 @@
               <!-- footer boottom section ends here -->
 
         </footer>
+
+       <script>
+        window.addEventListener("load", function () {
+            document.querySelector(".pre-loader").style.display = "none"
+        })
+       </script>
     </body>
 </html>

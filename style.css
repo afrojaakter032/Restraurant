@@ -19,6 +19,23 @@ html {
     height: 100vh;
     background-color: black;
     z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pre-loader img {
+    height: 80px;
+    width: 80px;
+}
+.go-to-top-btn .btn-circle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background-color: #fa8507;
+    color: white;
+
 }
 
 .container {

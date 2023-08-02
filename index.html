@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" />
         <link href="https://fonts.googleapis.com/css2?family=Rufina&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
         <link rel="stylesheet" href="style.css"/>
     </head>
@@ -49,7 +50,7 @@
                     </button>
                 </div>
                 <!-- search btn ends here -->
-                <nav class="navbar open">
+                <nav class="navbar">
                     <div>
                         <button class="btn-circle menu-close-btn">
                             <i class="fa-solid fa-xmark"></i>
@@ -113,7 +114,27 @@
             <!-- hero section start here -->
             <section class="hero">
                 <div class="hero-content">
-                    <img src="./images/banner3.jpg" alt="banner" width="100%">
+                    <!-- <img src="./images/banner3.jpg" alt="banner" width="100%"> -->
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                        <!-- Slides -->
+                            <div class="swiper-slide"><img src="./images/slider/hero-img-2-2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/slider/hero-img-2-3.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/slider/hero-img-3-2.jpg" alt=""></div>
+                        ...
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
                 </div>
             </section>
             <!-- hero section ends here -->
@@ -946,6 +967,8 @@
               <!-- footer boottom section ends here -->
 
         </footer>
-       <script src="./assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="./assets/js/main.js"></script>
+       
     </body>
 </html>

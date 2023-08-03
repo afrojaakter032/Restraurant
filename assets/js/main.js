@@ -14,31 +14,31 @@ document.querySelector('.menubar-icon').addEventListener('click', function(){
 });
 
 document.querySelector('.menu-close-btn').addEventListener('click', function(){
-    
     document.querySelector('.navbar').classList.remove('open');
-    
-
 });
+const heroSwiper = new Swiper('.hero-swiper', {
 
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    
     loop: true,
-  
-    // If we need pagination
+    autoplay: true,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.hero-swiper .swiper-pagination',
     },
-  
-    // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.hero-swiper .swiper-button-next',
+      prevEl: '.hero-swiper .swiper-button-prev',
     },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
+  });
+
+  const corporateSwiper = new Swiper('.corporate-swiper', {
+    slidesPerView: 3,
+    loop: true,
+    autoplay: true,
+    pagination: {
+      el: '.corporate-swiper .swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.corporate-swiper .swiper-button-next',
+      prevEl: '.corporate-swiper .swiper-button-prev',
     },
   });
       

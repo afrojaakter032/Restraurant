@@ -31,7 +31,7 @@ const heroSwiper = new Swiper('.hero-swiper', {
 
   const corporateSwiper = new Swiper('.corporate-swiper', {
     slidesPerView: 3,
-    loop: true,
+    rewind: true,
     autoplay: true,
     pagination: {
       el: document.querySelector('.corporate-swiper .swiper-pagination'),

@@ -21,12 +21,12 @@ const heroSwiper = new Swiper('.hero-swiper', {
     loop: true,
     autoplay: true,
     pagination: {
-      el: '.hero-swiper .swiper-pagination',
+      el: document.querySelector('.hero-swiper .swiper-pagination'),
     },
     navigation: {
-      nextEl: '.hero-swiper .swiper-button-next',
-      prevEl: '.hero-swiper .swiper-button-prev',
-    },
+      nextEl: document.querySelector('.hero-swiper .swiper-button-next'),
+      prevEl: document.querySelector('.hero-swiper .swiper-button-prev'),
+    }
   });
 
   const corporateSwiper = new Swiper('.corporate-swiper', {
@@ -34,11 +34,11 @@ const heroSwiper = new Swiper('.hero-swiper', {
     loop: true,
     autoplay: true,
     pagination: {
-      el: '.corporate-swiper .swiper-pagination',
+      el: document.querySelector('.corporate-swiper .swiper-pagination'),
     },
     navigation: {
-      nextEl: '.corporate-swiper .swiper-button-next',
-      prevEl: '.corporate-swiper .swiper-button-prev',
+      nextEl: document.querySelector('.corporate-swiper .swiper-button-next'),
+      prevEl: document.querySelector('.corporate-swiper .swiper-button-prev'),
     },
   });
       

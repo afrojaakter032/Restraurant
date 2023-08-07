@@ -31,14 +31,29 @@ const heroSwiper = new Swiper('.hero-swiper', {
 
   const corporateSwiper = new Swiper('.corporate-swiper', {
     slidesPerView: 3,
-    rewind: true,
+    loop: true,
     autoplay: true,
     pagination: {
       el: document.querySelector('.corporate-swiper .swiper-pagination'),
     },
+    
     navigation: {
       nextEl: document.querySelector('.corporate-swiper .swiper-button-next'),
       prevEl: document.querySelector('.corporate-swiper .swiper-button-prev'),
+    },
+  });
+
+  const latestSwiper = new Swiper('.latest-news-swiper', {
+    slidesPerView: 2,
+    loop: true,
+    autoplay: true,
+    pagination: {
+      el: document.querySelector('.latest-news-swiper .swiper-pagination'),
+    },
+    
+    navigation: {
+      nextEl: document.querySelector('.latest-news-swiper.swiper-button-next'),
+      prevEl: document.querySelector('.latest-news-swiper .swiper-button-prev'),
     },
   });
       

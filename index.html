@@ -10,6 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" />
         <!-- font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery-bundle.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" />
         <link href="https://fonts.googleapis.com/css2?family=Rufina&display=swap" rel="stylesheet">
@@ -602,7 +603,7 @@
 
                     </div>
                     <div class="gallery">
-                        <div class="gallery-wrap">
+                        <div class="gallery-wrap" id="lightgallery">
                             <div class="gallery-image">
                                 <img src="./images/gallery/gallery-img-1-1.jpg" alt="image1">
                                 <div class="gallery-overlay"><i class="fa-regular fa-eye"></i></div>
@@ -658,7 +659,7 @@
               </section>
                <!-- pomotional banner section stars  here -->
                <!-- testimonial starts from here -->
-              <section class="testimonial-section">
+               <section class="testimonial-section">
                 <div class="container">
                     <div class="testimonial-content">
                         <span><i>corporate Application</i></span>
@@ -670,17 +671,62 @@
                     </div>
                     <div class="testimonial-wrap">
                        <div class="testimonial-circle">
-                        <div class="testimonial-item">
-                            <div class="testimonial-img">
-                                <img src="./images/testimonial-author-1-2.png" alt="image">
+                        <div class="swiper testimonial-swiper">
+                            
+                            <div class="swiper-wrapper">
+                              
+                              <div class="swiper-slide">
+                                <div class="testimonial-item">
+                                    <div class="testimonial-img">
+                                        <img src="./images/testimonial-author-1-2.png" alt="image">
+                                    </div>
+                                    <div class="testimonial-text">
+                                        <h1>Mary Rievara</h1>
+                                        <span>Chef Leader</span>
+                                        <p>uniquely Engineer prospective networks rather then clicks and morter channels.credibly impact bleeding edge.</p>
+                                    </div>
+                                
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="testimonial-item">
+                                    <div class="testimonial-img">
+                                        <img src="./images/testimonial/testimonial-author-1-1.png" alt="image">
+                                    </div>
+                                    <div class="testimonial-text">
+                                        <h1>vivi Marian</h1>
+                                        <span>Cooking Chef</span>
+                                        <p>uniquely Engineer prospective networks rather then clicks and morter channels.credibly impact bleeding edge.</p>
+                                    </div>
+                                
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="testimonial-item">
+                                    <div class="testimonial-img">
+                                        <img src="./images/testimonial/testimonial-author-1-3.png" alt="image">
+                                    </div>
+                                    <div class="testimonial-text">
+                                        <h1>William Hatson</h1>
+                                        <span>Asst Chef</span>
+                                        <p>uniquely Engineer prospective networks rather then clicks and morter channels.credibly impact bleeding edge.</p>
+                                    </div>
+                                
+                                </div>
+                              </div>
+                              ...
                             </div>
-                            <div class="testimonial-text">
-                                <h1>Mary Rievara</h1>
-                                <span>Chef Leader</span>
-                                <p>uniquely Engineer prospective networks rather then clicks and morter channels.credibly impact bleeding edge.</p>
-                            </div>
-
-                        </div>
+                            
+                            <div class="swiper-pagination"></div>
+                          
+                            
+                            <!-- <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div> -->
+                          
+                            
+                            
+                          </div>
+                   
 
                        </div>
 
@@ -688,6 +734,8 @@
 
                 </div>
               </section>
+            
+            
                <!-- testimonial starts from here -->
                <!-- newslater section starts here -->
                <section class="newsletter-section">
@@ -1004,6 +1052,7 @@
               <!-- footer boottom section ends here -->
 
         </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script src="./assets/js/main.js"></script>
        

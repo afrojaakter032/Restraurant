@@ -36,7 +36,20 @@ const heroSwiper = new Swiper('.hero-swiper', {
     pagination: {
       el: document.querySelector('.corporate-swiper .swiper-pagination'),
     },
-    
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        
+      },
+      768: {
+        slidesPerView: 2,
+        
+      },
+      1199: {
+        slidesPerView: 3,
+        
+      },
+    },
     navigation: {
       nextEl: document.querySelector('.corporate-swiper .swiper-button-next'),
       prevEl: document.querySelector('.corporate-swiper .swiper-button-prev'),
@@ -50,10 +63,39 @@ const heroSwiper = new Swiper('.hero-swiper', {
     pagination: {
       el: document.querySelector('.latest-news-swiper .swiper-pagination'),
     },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        
+      },
+      768: {
+        slidesPerView: 2,
+        
+      },
+      1199: {
+        slidesPerView: 3,
+        
+      },
+    },
     
     navigation: {
       nextEl: document.querySelector('.latest-news-swiper.swiper-button-next'),
       prevEl: document.querySelector('.latest-news-swiper .swiper-button-prev'),
     },
   });
+  const testimonialSwiper = new Swiper('.testimonial-swiper', {
+    effect: "fade",
+    loop: true,
+    autoplay: true,
+    pagination: {
+      el: document.querySelector('.testimonial-swiper .swiper-pagination'),
+    },
+  });
+
+  lightGallery(document.getElementById('lightgallery'), {
+    // plugins: [lgZoom, lgThumbnail],
+    speed: 500,
+    
+});
+  
       

@@ -93,19 +93,8 @@ const heroSwiper = new Swiper('.hero-swiper', {
   });
 
   lightGallery(document.getElementById('lightgallery'), {
-    // plugins: [lgZoom, lgThumbnail],
+    plugins: [lgZoom],
     speed: 500,
-    lightGallery(gallery, options);
-
-    document.addEventListener('DOMContentLoaded', function() {
-      var options = {
-          plugins: [lgZoom]
-      };
-
-      // var gallery = document.getElementById('lightgallery');
-
-  });
-    
 });
   
       

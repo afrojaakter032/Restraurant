@@ -96,5 +96,10 @@ const heroSwiper = new Swiper('.hero-swiper', {
     plugins: [lgZoom],
     speed: 500,
 });
+
+let demo = new CountUp( 
+  document.querySelector('#yearOfExperience'), 25
+);
+
   
       

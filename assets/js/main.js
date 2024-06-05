@@ -97,9 +97,11 @@ const heroSwiper = new Swiper('.hero-swiper', {
     speed: 500,
 });
 
-let demo = new CountUp( 
-  document.querySelector('#yearOfExperience'), 25
-);
+new countUp.CountUp('yearOfExperience', 2500).start();
+new countUp.CountUp('ExperienceWorker', 2000).start();
+new countUp.CountUp('HappyCoustomer', 500).start();
+new countUp.CountUp('Branches', 8000).start();
+
 
   
       
